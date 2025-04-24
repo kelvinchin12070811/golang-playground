@@ -1,5 +1,5 @@
 services:
-  ruby-playground:
+  golang-playground:
     build: .
     restart: "unless-stopped"
     tmpfs:
