@@ -9,4 +9,4 @@ services:
       - /var/golang-playground/vscode-server:/root/.vscode-server
     environment:
       - FEATURE_RESET=1
-    hostname: ruby-playground
+    hostname: golang-playground
