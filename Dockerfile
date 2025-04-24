@@ -8,8 +8,9 @@ RUN apt-get update && \
     --output /tmp/vscode-cli.tar.gz && \
     tar -xf /tmp/vscode-cli.tar.gz -C /usr/bin && \
     rm /tmp/vscode-cli.tar.gz && \
-    mkdir /home/playground && \
-    echo "export PATH=\$PATH:/usr/local/go/bin" >> /root/.bashrc && \
+    mkdir /home/playground &&
+
+RUN echo "export PATH=\$PATH:/usr/local/go/bin" >> /root/.bashrc
 
 WORKDIR /home/playground
 
