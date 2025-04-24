@@ -1,0 +1,12 @@
+services:
+  ruby-playground:
+    build: .
+    restart: "unless-stopped"
+    tmpfs:
+      - /home/playground
+    volumes:
+      - /var/golang-playground/vscode:/root/.vscode
+      - /var/golang-playground/vscode-server:/root/.vscode-server
+    environment:
+      - FEATURE_RESET=1
+    hostname: ruby-playground
